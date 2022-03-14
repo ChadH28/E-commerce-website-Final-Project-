@@ -1,5 +1,5 @@
 import React from 'react';
-import Products from '../Products'
+import Products from '../../components/products/products'
 
 function HomePage(props) {
     return (

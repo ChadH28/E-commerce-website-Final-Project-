@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { saveShipping } from '../../actions/cartActions';
-import Checkout from '../Checkout';
+import { saveShipping } from '../../actions/cart.actions';
+import Checkout from '../../components/checkout/checkout';
 import './Formpages.css';
 
 function ShippingPage(props) {

@@ -4,9 +4,9 @@ import {
   saveProduct,
   listProducts,
   deleteProduct
-} from '../actions/productActions';
-import './Productmangement.css';
-import Loader from '../components/Loader'
+} from '../../actions/product.actions';
+import './product-mangement.css';
+import Loader from '../../components/loader/loader';
 
 function ProductMangement(props) {
     const [_id, setId] = useState('');

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { savePayment } from '../../actions/cartActions';
-import CheckoutSteps from '../Checkout';
+import { savePayment } from '../../actions/cart.actions';
+import CheckoutSteps from '../../components/checkout/checkout';
 import './Formpages.css';
 
 function PaymentPage(props) {

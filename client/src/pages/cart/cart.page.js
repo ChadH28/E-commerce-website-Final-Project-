@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart, removeFromCart } from '../../actions/cartActions';
-import './Cartpage.css';
+import { addToCart, removeFromCart } from '../../actions/cart.actions';
+import './cart.css';
 import { Link } from 'react-router-dom';
 
 function CartPage(props) {

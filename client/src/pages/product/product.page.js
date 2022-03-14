@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { descriptionProduct } from "../../actions/productActions";
+import { descriptionProduct } from "../../actions/product.actions";
 import "./product.css";
-import Loader from "../Loader";
+import Loader from '../../components/loader/loader';
 
 function ProductPage(props) {
   const [qty, setQty] = useState(1);

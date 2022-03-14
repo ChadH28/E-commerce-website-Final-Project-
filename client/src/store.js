@@ -1,8 +1,8 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
-import {productListReducer, productDescriptionReducer, productSaveReducer, productDeleteReducer} from './components/reducers/productReducer'
-import { cartReducer } from './components/reducers/cartReducer';
-import {userSigninReducer, userRegisterReducer} from './components/reducers/userReducer';
+import {productListReducer, productDescriptionReducer, productSaveReducer, productDeleteReducer} from './reducers/product.reducer'
+import { cartReducer } from './reducers/cart.reducer';
+import {userSigninReducer, userRegisterReducer} from './reducers/user.reducer';
 
 const initialState = { userSignin: {}};
 

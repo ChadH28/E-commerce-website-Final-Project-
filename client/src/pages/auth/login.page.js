@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import './Formpages.css';
+import './formpages.css';
 import { Link } from 'react-router-dom';
-import {signin} from '../../actions/userActions';
-import Loader from '../Loader';
-import Checkout from '../Checkout';
+import {signin} from '../../actions/user.actions';
+import Loader from '../../components/loader/loader';
+import Checkout from '../../components/checkout/checkout';
 
 function SigninPage(props) {
 

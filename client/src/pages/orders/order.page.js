@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import CheckoutSteps from '../Checkout';
+import CheckoutSteps from '../../components/checkout/checkout';
 import './order.css'
 
 

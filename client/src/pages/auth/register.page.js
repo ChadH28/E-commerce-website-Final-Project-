@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { register } from '../../actions/userActions';
-import './Formpages.css';
-import Loader from '../Loader';
+import { register } from '../../actions/user.actions';
+import './formpages.css';
+import Loader from '../../components/loader/loader';
 
 
 function Registerpage(props) {

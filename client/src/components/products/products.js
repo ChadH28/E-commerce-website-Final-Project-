@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import './products.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { listProducts } from '../../actions/product.actions';
-import Loader from './Loader'
+import Loader from '../../components/loader/loader'
 
 function Products(props) {
     const productList = useSelector(state => state.productList);
