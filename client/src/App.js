@@ -7,17 +7,17 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
 // Pages
-import HomePage from './components/pages/Homepage';
-import ContactPage from './components/pages/Contactpage';
-import AboutPage from './components/pages/Aboutpage';
-import ProductPage from './components/pages/Productpage';
-import CartPage from './components/pages/Cartpage';
-import SigninPage from './components/pages/Signinpage';
-import RegisterPage from './components/pages/Registerpage';
-import ProductMangement from './components/pages/Productmangement';
-import ShippingPage from './components/pages/Shippingpage';
-import PaymentsPage from './components/pages/Paymentspage';
-import OrderPage from './components/pages/Orderpage';
+import HomePage from './pages/Homepage';
+import ContactPage from './pages/Contactpage';
+import AboutPage from './pages/Aboutpage';
+import ProductPage from './pages/Productpage';
+import CartPage from './pages/Cartpage';
+import SigninPage from './pages/Signinpage';
+import RegisterPage from './pages/Registerpage';
+import ProductMangement from './pages/Productmangement';
+import ShippingPage from './pages/Shippingpage';
+import PaymentsPage from './pages/Paymentspage';
+import OrderPage from './pages/Orderpage';
 
 
 function App() {
