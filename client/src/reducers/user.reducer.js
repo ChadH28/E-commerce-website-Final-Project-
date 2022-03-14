@@ -1,11 +1,11 @@
 import {
-    USER_SIGNIN_REQUEST,
-    USER_SIGNIN_SUCCESS,
-    USER_SIGNIN_FAIL,
-    USER_REGISTER_REQUEST,
-    USER_REGISTER_SUCCESS,
-    USER_REGISTER_FAIL
-} from "../constants/userContants";
+  USER_SIGNIN_REQUEST,
+  USER_SIGNIN_SUCCESS,
+  USER_SIGNIN_FAIL,
+  USER_REGISTER_REQUEST,
+  USER_REGISTER_SUCCESS,
+  USER_REGISTER_FAIL
+} from "../constants/user.constants";
 
 // user sign-in reducer
 function userSigninReducer(state = {}, action) {

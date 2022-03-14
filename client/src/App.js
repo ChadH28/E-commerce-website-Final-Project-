@@ -3,21 +3,21 @@ import {BrowserRouter, Route} from 'react-router-dom'
 // CSS
 import './App.css';
 // Components
-import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
-import Footer from './components/Footer';
+import Navbar from './components/navbar/navbar';
+import Sidebar from './components/sidebar/sidebar';
+import Footer from './components/footer/footer';
 // Pages
-import HomePage from './pages/Homepage';
-import ContactPage from './pages/Contactpage';
-import AboutPage from './pages/Aboutpage';
-import ProductPage from './pages/Productpage';
-import CartPage from './pages/Cartpage';
-import SigninPage from './pages/Signinpage';
-import RegisterPage from './pages/Registerpage';
-import ProductMangement from './pages/Productmangement';
-import ShippingPage from './pages/Shippingpage';
-import PaymentsPage from './pages/Paymentspage';
-import OrderPage from './pages/Orderpage';
+import HomePage from './pages/home/home.page';
+import ContactPage from './pages/contact/contact.page';
+import AboutPage from './pages/about/about.page';
+import ProductPage from './pages/product/product.page';
+import CartPage from './pages/cart/cart.page';
+import SigninPage from './pages/auth/login.page';
+import RegisterPage from './pages/auth/register.page';
+import ProductMangement from './pages/management/product-mangement.page';
+import ShippingPage from './pages/shipping/shipping.page';
+import PaymentsPage from './pages/payments/payments.page';
+import OrderPage from './pages/orders/order.page';
 
 
 function App() {

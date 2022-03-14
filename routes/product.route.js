@@ -1,6 +1,6 @@
 const express = require('express');
 const { check, validationResult } = require('express-validator');
-const Product = require('../models/productModel');
+const Product = require('../models/product.model');
 const userAuth = require('../middleware/authorisation');
 const adminAuth = require('../middleware/authorisation');
 

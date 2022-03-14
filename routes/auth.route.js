@@ -8,7 +8,7 @@ const userAuth = require('../middleware/authorisation');
 const adminAuth = require('../middleware/authorisation');
 
 // user model
-const User = require('../models/userModel');
+const User = require('../models/user.model');
 
 
 // @route   GET api/userAuth

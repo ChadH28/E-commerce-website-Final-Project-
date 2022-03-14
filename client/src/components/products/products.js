@@ -1,8 +1,8 @@
 import React, { useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import './Products.css';
+import './products.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { listProducts } from '../actions/productActions';
+import { listProducts } from '../../actions/product.actions';
 import Loader from './Loader'
 
 function Products(props) {

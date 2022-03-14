@@ -6,11 +6,11 @@ import {
     CART_REMOVE_ITEM_FAIL,
     CART_SAVE_SHIPPING,
     CART_SAVE_PAYMENT
-} from "../components/constants/cartConstants";
+} from "../constants/cart.constants.js";
 
 const addToCart = (productId, qty) => async (dispatch) => {
     try {
-        const {data} = await axios.get('/api/products/' + productId);
+        const { data } = await axios.get('/api/products/' + productId);
         dispatch({
             type: CART_ADD_ITEM,
             payload: {
@@ -22,7 +22,7 @@ const addToCart = (productId, qty) => async (dispatch) => {
                 qty
             }
         });
-    } 
+    }
     catch (error) {
         dispatch({
             type: CART_ADD_ITEM_FAIL,
@@ -36,14 +36,14 @@ const removeFromCart = (productId) => (dispatch) => {
         dispatch({
             type: CART_REMOVE_ITEM,
             payload: productId
-        }); 
-    } 
+        });
+    }
     catch (error) {
         dispatch({
             type: CART_REMOVE_ITEM_FAIL,
             payload: error.message
         });
-    } 
+    }
 }
 
 const saveShipping = (data) => (dispatch) => {

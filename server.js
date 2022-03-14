@@ -1,9 +1,9 @@
 const express = require('express');
 const connectDB = require('./config/db');
 const data = require('./data');
-const userRoute = require('./routes/userRoute');
-const productRoute = require('./routes/productRoute');
-const authRoute = require('./routes/authRoute')
+const userRoute = require('./routes/user.route');
+const productRoute = require('./routes/product.route');
+const authRoute = require('./routes/auth.route')
 const path = require('path');
 
 

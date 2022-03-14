@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { descriptionProduct } from "../../actions/productActions";
-import "./Productpage.css";
+import "./product.css";
 import Loader from "../Loader";
 
 function ProductPage(props) {

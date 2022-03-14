@@ -5,9 +5,9 @@ import {
     CART_REMOVE_ITEM_FAIL,
     CART_SAVE_SHIPPING,
     CART_SAVE_PAYMENT
-} from "../constants/cartConstants";
+} from "../constants/cart.constants.js";
 
-function cartReducer(state = {cartItems: [], shipping:{},payment:{}}, action) {
+function cartReducer(state = { cartItems: [], shipping: {}, payment: {} }, action) {
     switch (action.type) {
         case CART_ADD_ITEM:
             const item = action.payload;
@@ -17,7 +17,7 @@ function cartReducer(state = {cartItems: [], shipping:{},payment:{}}, action) {
                     cartItems: state.cartItems.map(x => x.product === product.product ? item : x)
                 };
             }
-            return { 
+            return {
                 cartItems: [...state.cartItems, item]
             };
         case CART_ADD_ITEM_FAIL:

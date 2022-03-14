@@ -10,27 +10,27 @@ import {
     PRODUCT_SAVE_FAIL,
     PRODUCT_DELETE_REQUEST,
     PRODUCT_DELETE_SUCCESS,
-    PRODUCT_DELETE_FAIL 
-} from "../components/constants/productConstants";
+    PRODUCT_DELETE_FAIL
+} from ".././constants/product.constants.js";
 import axios from 'axios';
 
 // listing products
 const listProducts = () => async (dispatch) => {
     try {
         dispatch({
-            type: PRODUCT_LIST_REQUEST 
+            type: PRODUCT_LIST_REQUEST
         });
-        const {data} = await axios.get('/api/products');
+        const { data } = await axios.get('/api/products');
         dispatch({
             type: PRODUCT_LIST_SUCCESS,
             payload: data
-        });  
+        });
     } catch (error) {
         dispatch({
             type: PRODUCT_LIST_FAIL,
             payload: error.message
         });
-    } 
+    }
 }
 
 // pulling out a prouct from products
@@ -40,7 +40,7 @@ const descriptionProduct = (productId) => async (dispatch) => {
             type: PRODUCT_DETAILS_REQUEST,
             payload: productId
         });
-        const {data} = await axios.get('/api/products/' + productId);
+        const { data } = await axios.get('/api/products/' + productId);
         dispatch({
             type: PRODUCT_DETAILS_SUCCESS,
             payload: data
@@ -56,7 +56,7 @@ const descriptionProduct = (productId) => async (dispatch) => {
 // Adding and updating products
 const saveProduct = (product) => async (dispatch) => {
     const config = {
-        headers: {'Content-Type': 'application/json'}
+        headers: { 'Content-Type': 'application/json' }
     };
 
     try {
@@ -64,15 +64,15 @@ const saveProduct = (product) => async (dispatch) => {
             type: PRODUCT_SAVE_REQUEST,
             payload: product
         });
-        
+
         if (!product._id) {
-            const {data} = await axios.post('/api/products', product, config);
+            const { data } = await axios.post('/api/products', product, config);
             dispatch({
                 type: PRODUCT_SAVE_SUCCESS,
                 payload: data
             });
         } else {
-            const {data} = await axios.put('/api/products/' + product._id, product, config);
+            const { data } = await axios.put('/api/products/' + product._id, product, config);
             dispatch({
                 type: PRODUCT_SAVE_SUCCESS,
                 payload: data
@@ -89,14 +89,14 @@ const saveProduct = (product) => async (dispatch) => {
 // deleting product
 const deleteProduct = (productId) => async (dispatch) => {
     const config = {
-        headers: {'Content-Type': 'application/json'}
+        headers: { 'Content-Type': 'application/json' }
     };
     try {
         dispatch({
             type: PRODUCT_DELETE_REQUEST,
             payload: productId
         });
-        const {data} = await axios.delete('/api/products/' + productId, config);
+        const { data } = await axios.delete('/api/products/' + productId, config);
         dispatch({
             type: PRODUCT_DELETE_SUCCESS,
             payload: data,

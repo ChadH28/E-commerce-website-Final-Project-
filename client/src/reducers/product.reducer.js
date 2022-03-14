@@ -11,7 +11,7 @@ import {
     PRODUCT_DELETE_REQUEST,
     PRODUCT_DELETE_SUCCESS,
     PRODUCT_DELETE_FAIL
-} from "../constants/productConstants";
+} from "../constants/product.constants";
 
 function productListReducer(state = { products: [] }, action) {
     switch (action.type) {
@@ -97,8 +97,7 @@ function productDeleteReducer(state = { product: {} }, action) {
         default:
             return state;
     }
-  }
-
+}
 
 
 export {

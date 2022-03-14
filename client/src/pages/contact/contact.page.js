@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact&Aboutpage.css';
-import image from '../../SouthAfrica.png';
+import image from '../../assets/SouthAfrica.png';
 
 function Contactpage() {
     return (
